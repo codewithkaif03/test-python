@@ -13,7 +13,7 @@ class Post(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Hello Kaif, how are you"}
+    return {"message": "Hello Faraz, how are you"}
 
 @app.get("/post")
 def get_post():
@@ -29,3 +29,5 @@ def data(new_post: Post):
     # print(new_post)
     print(new_post.dict())
     return {"data": "new post"}
+
+
